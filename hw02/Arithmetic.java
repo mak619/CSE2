@@ -66,12 +66,12 @@ double totalSalesTax$=roundSock$+roundGlass$+roundEnvelope$;
 // total cost of the purchases after tax
 double totalCostAfterTax$=totalCostBeforeTax$+totalSalesTax$;
 // rounnded value of total cost of purchases after tax
-double roundTotalCostAfterTax$=(int)(totalCostBeforeTax$*100)/100.0;
+double roundTotalCostAfterTax$=(int)(totalCostAfterTax$*100)/100.0;
 
 // Print out the total cost of purchases before and after tax and the total sales tax 
 System.out.println("The total cost of purchases before tax is $"+totalCostBeforeTax$+".");
 System.out.println("The total sales tax is $"+totalSalesTax$+".");
-System.out.println("The total cost of purchases after tax is $"+totalCostAfterTax$+".");
+System.out.println("The total cost of purchases after tax is $"+roundTotalCostAfterTax$+".");
 
 
     } // end of main method
