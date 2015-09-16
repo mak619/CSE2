@@ -12,15 +12,15 @@ public class Block{
     // declare an instance of the scanner object
     Scanner myScanner= new Scanner( System.in );
     // prompt the user for the length of the block
-    System.out.print("Enter the length of the block:");
+    System.out.print("Enter the length of the block: ");
     // Accept the input
     double length= myScanner.nextDouble();
     // prompt the user for the width of the block
-    System.out.print("Enter the width of the block:");
+    System.out.print("Enter the width of the block: ");
     // Accept the input
     double width= myScanner.nextDouble();
     // prompt the user for the height of the block
-    System.out.print("Enter the heigh of the block:");
+    System.out.print("Enter the height of the block: ");
     // Accept the input
     double height= myScanner.nextDouble();
     // declare the variable volume

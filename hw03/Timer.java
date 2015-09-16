@@ -14,11 +14,11 @@ public class Timer{
     // declare an instance of the Scanner object
     Scanner myScanner= new Scanner( System.in );
     // Prompt user for the current time
-    System.out.print("Enter the current time:");
+    System.out.print("Enter the current time: ");
     // Accept user input
     int currentTime= myScanner.nextInt();
     // Prompt user for the time that they will be eating dinner
-    System.out.print("Enter the time that you will be eating dinner:");
+    System.out.print("Enter the time that you will be eating dinner: ");
     // Accept user input
     int dinnerTime= myScanner.nextInt();
     // Declare a variable which will tell us the amount of time remaining
