@@ -13,7 +13,13 @@ public class HelloWorld{
     
 //  add main method 
   public static void main(String[] args) {
-      
+    
+   int x=512;
+   
+   int y= (x%100)/10;
+   System.out.println(y);
+    double z=210%11;
+    System.out.println(z);
 //  print the statement with box around it 
     System.out.println("########################");
     System.out.println("########################");
