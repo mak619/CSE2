@@ -12,11 +12,11 @@ public class Area { // define a class
            if (myScanner.hasNextDouble()) { // if Scanner is double
                double input=myScanner.nextDouble(); // store value into input
                return input; // ask to return input
-           }
-           else {
+           } // end of if statement
+           else { // otherwise
                System.out.print("Sorry, you did not enter a double value. Try again: ");// error message and prompt user again
                myScanner.nextLine();// whatever user inputs
-           }
+           } // end of else statement
        } // end of while loop
    } // end of input method
    public static double rectArea(double width, double height) {// define the rectangle area method
