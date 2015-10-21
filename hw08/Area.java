@@ -47,12 +47,12 @@ public class Area { // define a class
       while (true) { // loop always runs
           if (shape.equals(a) || shape.equals(b) || shape.equals(c) ) { // if shape is equal to rectangle, triangle, or circle
               break; // break and exit
-          }
-          else {
+          } // end of if statement
+          else { // otherwise
               System.out.println("This is not an acceptable shape. The acceptable shapes are: rectangle, triangle, or a circle."); // error message and tell them what acceptable shapes are
               System.out.print("Please input what shape's area you would like to calculate: "); // ask again
               shape=myScanner.next(); // assign what they input to shape
-          }
+          } // end of else statement 
       } // end of while loop
       if (shape.equals(a)) {// if shape is a rectangle
           System.out.print("Please input the width of the rectangle: ");
