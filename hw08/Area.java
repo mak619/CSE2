@@ -55,23 +55,23 @@ public class Area { // define a class
           } // end of else statement 
       } // end of while loop
       if (shape.equals(a)) {// if shape is a rectangle
-          System.out.print("Please input the width of the rectangle: ");
+          System.out.print("Please input the width of the rectangle: "); // ask width
           rWidth=input();// run input method with width value
-          System.out.print("Please input the height of the rectangle: ");
+          System.out.print("Please input the height of the rectangle: "); // ask height
           rHeight=input(); // run input method with heigh value
           double rectArea=rectArea(rWidth,rHeight); // calculate the area of the rectangle and run rectArea method
           System.out.println("The area of the rectangle is: " +rectArea);// print out output
       } // end of if rectangle statement
     else if (shape.equals(b)) { // if shape is a triangle  
-          System.out.print("Please input the base length of the triangle: ");
+          System.out.print("Please input the base length of the triangle: "); // ask base length
           tBase=input(); // run input method with triangle base value
-          System.out.print("Please input the height of the triangle: ");
+          System.out.print("Please input the height of the triangle: "); // ask height
           tHeight=input(); // run input method with triangle height value
           double triArea=triArea(tBase,tHeight);// calculate triangle area by running triArea method
           System.out.println("The area of the triangle is: " +triArea); // print out output
         } // end of if triangle statement
     else if (shape.equals(c)) { // if shape is a circle
-        System.out.print("Please input the radius of the circle: ");
+        System.out.print("Please input the radius of the circle: "); // ask the radius
         radius=input(); // run input method with radius
         double cirArea=cirArea(radius); // calculate area of a circle by running cirArea method
         System.out.println("The area of the circle is: " +cirArea); // print out output
