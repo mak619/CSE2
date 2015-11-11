@@ -121,7 +121,10 @@ public class CSE2Linear { // define the class
                 break; // break and exit the loop
             } // end of if statement
         } // end of if statement
-        /*for (int i=0; i<finalGrades.length; i++) {
+        /* This whole part has been commented out because the third error and the sorting method contradict each other. 
+        I was told to ignore the third error and only work with the sorting method. However, if we were to use the third
+        error, it would be like this. 
+        for (int i=0; i<finalGrades.length; i++) {
             while (myScanner.hasNextInt()==false) {
                 System.out.print("Error. Please only enter an integer: ");
                 String junk=myScanner.next();
@@ -129,6 +132,10 @@ public class CSE2Linear { // define the class
             int x=myScanner.nextInt();
             while(x<0 || x>100) {
                 System.out.print("Error. Please enter an integer between 0-100: ");
+                while (myScanner.hasNextInt()==false) {
+                    System.out.print("Error. Please only enter an integer: ");
+                    String junk=myScanner.next();
+                }
                 x=myScanner.nextInt();
             }
             finalGrades[i]=x;
@@ -138,10 +145,24 @@ public class CSE2Linear { // define the class
                   }
                   else {
                      System.out.println("Error. Please enter an integer that is greater than or equal to the last int: ");
-                     finalGrades[i]=myScanner.nextInt();
+                     while (myScanner.hasNextInt()==false) {
+                        System.out.print("Error. Please only enter an integer: ");
+                         String junk=myScanner.next();
+                    }
+                    x=myScanner.nextInt();
+                    while(x<0 || x>100) {
+                    System.out.print("Error. Please enter an integer between 0-100: ");
+                    while (myScanner.hasNextInt()==false) {
+                        System.out.print("Error. Please only enter an integer: ");
+                        String junk=myScanner.next();
+                    }   
+                    x=myScanner.nextInt();
+                    }
+                     finalGrades[i]=x;
                   }
-               } */
-         // end of for loop
+               }
+               }*/ 
+               // end of comment
         sorted(finalGrades); // call sorted method and run in with finalGrades
         System.out.print("Enter a grade to search for: "); // prompt user to input
         while (myScanner.hasNextInt()==false) { // loop runs to check if input is an integer
