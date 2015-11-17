@@ -7,7 +7,8 @@ import java.util.Scanner; // import Scanner class from outside
 
 public class Transpose { // define main class
     public static int[][] randomMatrix(int w, int h) { // define randomMatrix method that returns a 2D array
-        int[][] x= new int[h][w]; // create a 2D x array whose member arrays represent rows and the elements inside the member arrays include the numbers in the row
+        int[][] x= new int[h][w]; // create a 2D x array whose member arrays represent rows 
+        // and the elements inside the member arrays include the numbers in the row
         for (int i=0; i<h; i++) { // for loop for the 2D array
             for (int z=0; z<w; z++) { // for loop for individual member arrays
                 x[i][z]=(int)((Math.random()*21)-10); // generate random integers between -10 to 10 and assign them to the array
